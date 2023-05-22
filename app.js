@@ -60,7 +60,7 @@ function makeStrings(arr) {
 console.log(
   makeStrings([
     {
-      name: "Angelina Jolien",
+      name: "Angelina Jolienf",
       age: 80,
     },
     {
