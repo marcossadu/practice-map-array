@@ -1,22 +1,29 @@
 function doubleNumbers(arr) {
-  // your code here
+  return arr.map((x => x * 2))
 }
 
 console.log(doubleNumbers([2, 5, 100])); // [4, 10, 200]
 
 function stringItUp(arr) {
-  // your code here
+  return arr.toString((x => x ))
 }
 
 console.log(stringItUp([2, 5, 100])); // ["2", "5", "100"]
 
 function capitalizeNames(arr) {
-  // your code here
-}
+  return arr.map((nombres) => {
+
+    return nombres[0].toUpperCase()+ nombres.substring(1);
+
+  } )  
+
+  }
+
 
 console.log(capitalizeNames(["john", "JACOB", "jinGleHeimer", "schmidt"])); // ["John", "Jacob", "Jingleheimer", "Schmidt"]
 
 function namesOnly(arr) {
+  return arr.map( namesOnly => namesOnly.name)
   // your code here
 }
 
@@ -47,7 +54,7 @@ console.log(
 // ["Angelina Jolie", "Eric Jones", "Paris Hilton", "Kayne West", "Bob Ziroll"]
 
 function makeStrings(arr) {
-  // your code here
+  return arr.map(p => p.age <= 20 ? p.name + " is under age":p.name + " can go the Matrix")
 }
 
 console.log(
@@ -81,7 +88,7 @@ console.log(
 // "Bob Ziroll can go to The Matrix"]
 
 function readyToPutInTheDOM(arr) {
-  // your code here
+ return arr.map(x => `<h1> ${x.name} </h1><h2> ${x.age} </h2>`) 
 }
 console.log(
   readyToPutInTheDOM([
